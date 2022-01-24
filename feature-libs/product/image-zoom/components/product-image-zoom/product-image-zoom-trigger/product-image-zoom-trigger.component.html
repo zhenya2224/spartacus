@@ -1,0 +1,23 @@
+<!--<button>hi there</button>-->
+<button
+  class="btn btn-link cx-action-link"
+  (click)="triggerScanbarcode()"
+><span>
+    Scan barcode
+    <cx-icon [type]="iconType.INFO"></cx-icon
+    ></span></button>
+<!--<ngx-barcode-scanner [(value)]="value" style="display: flex; height:400px;" [codes]="['code_128', 'ean', 'upc', 'upc_e', 'ean_8']" [errorThreshold]="0.1" (exception)="onError($event)"></ngx-barcode-scanner>-->
+<!--<div style="display: flex;  justify-content: space-between; margin: 5% auto">-->
+  <!--&lt;!&ndash;<button (click)="onStartButtonPress()">Start</button>&ndash;&gt;-->
+  <!--&lt;!&ndash;<button (click)="onStopButtonPress()">Stop</button>&ndash;&gt;-->
+<!--</div>-->
+<button
+  #expandButton
+  class="btn btn-link cx-action-link"
+  (click)="triggerZoom()"
+>
+  <span>
+    {{ 'productImageZoomTrigger.expand' | cxTranslate }}
+    <cx-icon [type]="iconType.EXPAND_ARROWS"></cx-icon
+  ></span>
+</button>

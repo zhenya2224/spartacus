@@ -1,0 +1,8 @@
+// Always bump to the latest (breaking) styles during development.
+$useLatestStyles: true;
+
+@import '@spartacus/styles';
+@import '@spartacus/styles/scss/theme/santorini';
+
+$styleVersion: 4.2;
+@import '~@spartacus/styles/index';

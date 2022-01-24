@@ -1,0 +1,22 @@
+<div class="cx-image-zoom-dialog" >
+  <div class="cx-dialog-content">
+    <div class="cx-dialog-header">
+      <button
+        type="button"
+        class="close"
+        (click)="close('cross click')"
+      >
+        <span aria-hidden="true">
+          <cx-icon [type]="iconType.CLOSE"></cx-icon>
+        </span>
+      </button>
+    </div>
+    <div class="cx-dialog-body" style="width: 800px;margin: 0 auto;">
+     <h4>Barcode value: {{value}}</h4>
+      <ngx-barcode-scanner [(value)]="value" style="display: flex; height:400px;"
+                           [codes]="['code_128', 'ean', 'upc', 'upc_e', 'ean_8']"
+                           [errorThreshold]="0.1" (exception)="onError($event)"></ngx-barcode-scanner>
+    </div>
+    <span></span>
+  </div>
+</div>
